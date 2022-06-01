@@ -1,6 +1,4 @@
-#include <list.h>
-
-#print last digit of numbers
+#!/usr/bin/python3
 
 def print_last_digit(number):
     if number < 10 and number >= 0:
