@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 #include <list.h>
 
 #addition of two variables

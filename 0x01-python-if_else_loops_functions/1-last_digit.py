@@ -7,7 +7,7 @@ elif (number >= 10 or number < 100) or (number <= -10 or number > -100):
     last_digit = number % 10
 elif (number >= 100 or number < 1000) or (number <= -100 or number > -1000):
     last_digit = number % 100
-elif (number>=1000 and number<10000) or (number<=-1000 and number>-10000):
+elif (number >= 1000 and number < 10000) or (number <= -1000 and number > -10000):
     last_digit = number % 1000
 
 if last_digit > 5:
