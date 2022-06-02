@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-
     arg_list = sys.argv
     x = 0
     for a in arg_list:
