@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -m compile('$PYFILE', '$PYFILE', 'exec')" | "${PYFILE}c"
+python3 -m compile('$PYFILE', '$PYFILE', 'exec')" -b "${PYFILE}c"
