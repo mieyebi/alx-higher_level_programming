@@ -24,9 +24,9 @@ if __name__ == "__main__":
     elif args[2] == '-':
         c = sub(a, b)
         print("{} - {} = {}".format(a, b, c))
-    elif args[2] == '*':
-        c = mul(a, b)
-        print("{} * {} = {}".format(a, b, c))
-    elif args[2] == '/':
+    elif args[2] == "/":
         c = div(a, b)
         print("{} / {} = {}".format(a, b, c))
+    elif args[2] =="*":
+        c = mul(a, b)
+        print("{} * {} = {}".format(a, b, c))
