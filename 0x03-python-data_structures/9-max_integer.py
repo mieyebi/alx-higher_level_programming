@@ -2,7 +2,7 @@
 
 def max_integer(my_list=[]):
     a = len(my_list) - 1
-    b = 0
+    b = my_list[0]
     c = 0
     while c <= a:
         if b < my_list[c]:
