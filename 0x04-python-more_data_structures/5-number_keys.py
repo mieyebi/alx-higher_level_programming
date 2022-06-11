@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def number_keys(a_dictionary):
     x = 0
     for a in a_dictionary:
