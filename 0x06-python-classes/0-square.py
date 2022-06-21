@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" a square module that creates an empty class """
+"""a square module that creates an empty class """
 
 class Square:
-    """ a class square"""
+    """a class square"""
     pass

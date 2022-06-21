@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
+"""A module that creates a class and initializess with size"""
+
 class Square:
+    """A class that defines the square by size"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
