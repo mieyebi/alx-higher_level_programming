@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 """A module that creates a class and initializes with size"""
+
 
 class Square:
     """A class that defines the area"""
