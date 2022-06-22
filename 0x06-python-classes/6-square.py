@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 """A module that creates a class and initializess with size"""
+
 
 class Square:
     """A class that defines the square by size"""
