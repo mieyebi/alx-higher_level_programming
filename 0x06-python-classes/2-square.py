@@ -2,6 +2,7 @@
 
 """A square module that initializes a class"""
 
+
 class Square:
     """This class defines the object size"""
     def __init__(self, size=0):
