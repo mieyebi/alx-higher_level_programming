@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""a module that creates a class initializes with size"""
+"""an empty class: square"""
 
 
-    class Square:
-        """a class that defines size"""
-        def __init__(self, size):
+class Square:
+    """class initialized to size"""
+    def __init__(self, size):
         self.__size = size
