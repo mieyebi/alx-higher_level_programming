@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""A module that creates a class and initializes with size"""
+"""A module that creates a class"""
 
 
 class Square:
+"""class intializes size"""
     def __init__(self, size=0):
         """a class that initializes a square with size"""
         if type(size) != int:
