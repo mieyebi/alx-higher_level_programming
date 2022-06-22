@@ -3,7 +3,7 @@
 
 
 class Square:
-"""class intializes size"""
+    """class intializes size"""
     def __init__(self, size=0):
         if type(size) != int:
             raise TypeError("size must be an integer")
