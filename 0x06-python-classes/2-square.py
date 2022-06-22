@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """A square module that initializes a class"""
 
 
