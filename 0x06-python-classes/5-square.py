@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 """A module that creates a class and initializes it size"""
+
 
 class Square:
     """A class that defines the size of a square"""
@@ -12,7 +12,7 @@ class Square:
         return self.__size
 
     @size.setter
-    def size(self):
+    def size(self, size):
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
