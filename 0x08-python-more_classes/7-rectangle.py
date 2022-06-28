@@ -69,6 +69,8 @@ class Rectangle:
         """represents the object"""
         return "Rectangle({}, {})".format(self.width, self.height)
 
+    number_of_instances = 0
+
     def __del__(self):
         """deletes rectangle"""
         type(self).number_of_instances -= 1
