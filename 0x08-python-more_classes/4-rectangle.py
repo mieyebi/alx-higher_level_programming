@@ -49,22 +49,21 @@ class Rectangle:
         else:
             return (2 * self.width) + (2 * self.height)
 
-        def __str__(self):
-            """using strings"""
-            if self.width == 0:
-                return ""
-            if self.height == 0:
-                return ""
-            a = self.width * "#"
-            b = ""
+    def __str__(self):
+        """using strings"""
+        if self.width == 0:
+            return ""
+        if self.height == 0:
+            return ""
+        a = self.width * "#"
+        b = ""
 
-            for i in range(self.height):
-                b += a
-                if i != self.height - 1:
-                    b += "\n"
+        for i in range(self.height):
+            b += a
+            if i != self.height - 1:
+                b += "\n"
+        return b
 
-            return b
-
-        def __repr__(self):
-            """represents the object"""
-            return Rectangle("{}, {})".format(self.width, self.height)
+    def __repr__(self):
+        """represents the object"""
+        return "Rectangle({}, {})".format(self.width, self.height)
