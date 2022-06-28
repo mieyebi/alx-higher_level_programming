@@ -10,7 +10,7 @@ class Rectangle:
         """defines the rectangle attributes"""
         self.width = width
         self.height = height
-        type(self).number_of_instances += 1
+        type(self).number_of_instances+=1
 
     @property
     def width(self):
@@ -66,7 +66,6 @@ class Rectangle:
             b += a
             if i != self.height - 1:
                 b += "\n"
-
         return b
 
     def __repr__(self):
@@ -76,5 +75,5 @@ class Rectangle:
 
     def __del__(self):
         """deletes rectangle"""
-        type(self).number_of_instances -= 1
+        type(self).number_of_instances-=1
         print("Bye rectangle...")
