@@ -49,7 +49,7 @@ class Rectangle:
         else:
             return (2 * self.width) + (2 * self.height)
 
-        def __str__(self):
+        def __str__(self);
             """using strings"""
             if self.width == 0:
                 return ""
@@ -64,3 +64,7 @@ class Rectangle:
                     b += "\n"
 
             return b
+
+        def __repr__(self):
+            """represents the object"""
+            return "Rectangle(self.width + "," + self.height)
