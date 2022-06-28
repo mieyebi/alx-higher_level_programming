@@ -3,6 +3,7 @@
 
 class Rectangle:
     """defines the class rectangle"""
+
     def __init__(self, width=0, height=0):
         """defines the rectangle attributes"""
         self.width = width
@@ -33,7 +34,7 @@ class Rectangle:
         if not isinstance(height, int):
             raise TypeError("height must be an integer""")
         if height < 0:
-            raise ValueError("height must be >= 0""")
+            raise ValueError("height must be >= 0")
         self.__height = height
 
     def area(self):
@@ -49,18 +50,18 @@ class Rectangle:
         else:
             return (2 * self.width) + (2 * self.height)
 
-        def __str__(self):
-            """using strings"""
-            if self.width == 0:
-                return ""
-            if self.height == 0:
-                return ""
-            a = self.width * "#"
-            b = ""
+    def __str__(self):
+        """using strings"""
+        if self.width == 0:
+            return ""
+        if self.height == 0:
+            return ""
+        a = self.width * "#"
+        b = ""
 
-            for i in range(self.height):
-                b += a
-                if i != self.height - 1:
-                    b += "\n"
+        for i in range(self.height):
+            b += a
+            if i != self.height - 1:
+                b += "\n"
 
-            return b
+        return b
