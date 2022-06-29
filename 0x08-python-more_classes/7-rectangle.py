@@ -65,7 +65,7 @@ class Rectangle:
             self.print_symbol = str(type(self).print_symbol)
         else:
             self.print_symbol = str(self.print_symbol)
-        a = self.width * "#"
+        a = self.width * self.print_symbol
         b = ""
 
         for i in range(self.height):
