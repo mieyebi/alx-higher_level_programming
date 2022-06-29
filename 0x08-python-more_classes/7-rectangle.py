@@ -5,6 +5,7 @@ class Rectangle:
     """defines the class rectangle"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """defines the rectangle attributes"""
@@ -53,12 +54,16 @@ class Rectangle:
         else:
             return (2 * self.width) + (2 * self.height)
 
-    def __str__(self);
+    def __str__(self):
         """using strings"""
         if self.width == 0:
             return ""
         if self.height == 0:
             return ""
+        if self.print_symbol is None:
+            self.print_symbol = str(type(self).print_symbol)
+        else:
+            self.print_symbol = str(self.print_symbol)
         a = self.width * "#"
         b = ""
 
