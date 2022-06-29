@@ -56,7 +56,7 @@ class Rectangle:
             return (2 * self.width) + (2 * self.height)
 
     def __str__(self);
-        """using strings"""
+        """using string representations of the rectangle"""
         if self.width == 0:
             return ""
         if self.height == 0:
@@ -76,6 +76,6 @@ class Rectangle:
 
 
     def __del__(self):
-        """deletes rectangle"""
+        """deletes rectangle and prints a string"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
