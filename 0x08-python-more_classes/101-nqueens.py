@@ -31,10 +31,10 @@ def get_solution(board):
 
 def xout(board, row, col):
     """X out spots on a chessboard"""
-    # X out all forward spots
+
     for c in range(col + 1, len(board)):
         board[row][c] = "x"
-    # X out all backwards spots
+
     for c in range(col - 1, -1, -1):
         board[row][c] = "x"
 
@@ -89,3 +89,20 @@ def recursive_solve(board, row, queens, solutions):
                                         queens + 1, solutions)
 
     return (solutions)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: nqueens N")
+        sys.exit(1)
+    if sys.argv[1].isdigit() is False:
+        print("N must be a number")
+        sys.exit(1)
+    if int(sys.argv[1]) < 4:
+        print("N must be at least 4")
+        sys.exit(1)
+
+    board = init_board(int(sys.argv[1]))
+    solutions = recursive_solve(board, 0, 0, [])
+    for sol in solutions:
+        print(sol)
