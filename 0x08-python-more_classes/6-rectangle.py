@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-creates a class and defines it
+Defines the Rectangle class
 """
 
 class Rectangle:
