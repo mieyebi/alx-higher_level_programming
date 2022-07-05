@@ -3,8 +3,9 @@
     raises an exception"""
 
 
+
 class BaseGeometry:
     """A class with a public instance method that raises an exception"""
     def area(self):
         """this is a method that raises an exception"""
-        raise Exception("Area() is not implemented")
+        raise Exception("area() is not implemented")
