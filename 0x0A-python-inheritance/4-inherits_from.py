@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-''' A function that returns true or false if the object is an instance of class
-    that inherited from a specified class'''
+"""A function that returns true or false if the object is an instance of class
+    that inherited from a specified class"""
 
 
 
