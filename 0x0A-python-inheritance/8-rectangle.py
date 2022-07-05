@@ -2,6 +2,7 @@
 """a subclass that inherits frm a class BaseGeometry"""
 
 
+
 class BaseGeometry:
     """A class with a public instance method that raises an exception"""
 
