@@ -6,10 +6,6 @@
 class BaseGeometry:
     """A class with a public instance method that raises an exception"""
 
-    def __init__(self, name = "", value = ""):
-        self.name = name
-        self.value = value
-
     def area(self):
         """this is a method that raises an exception"""
         raise Exception("area() is not implemented")
