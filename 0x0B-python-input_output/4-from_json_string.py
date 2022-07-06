@@ -5,6 +5,6 @@
 import json
 
 
-def from json_string(my_str):
+def from_json_string(my_str):
     """returns an json object"""
     return json.loads(my_str)
