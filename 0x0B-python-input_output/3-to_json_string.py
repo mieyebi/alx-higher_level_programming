@@ -8,4 +8,4 @@ import json
 def to_json_string(my_job):
     """a JSON string representation"""
         a = json.dumps(my_job)
-        return a
+            return a
