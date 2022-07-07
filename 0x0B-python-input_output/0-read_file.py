@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""A function that reads a file """
+"""A function that reads a file"""
+
 
 def read_file(filename=""):
     """opens the file, reads the file and returns to the stdout"""
