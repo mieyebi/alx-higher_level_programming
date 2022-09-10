@@ -9,7 +9,7 @@ module.exports = class Square extends Square1 {
     } else {
       let a = 0;
       while (a < this.height) {
-        console.log('C'.repeat(this.width));
+        console.log(c.repeat(this.width));
         a++;
       }
     }
