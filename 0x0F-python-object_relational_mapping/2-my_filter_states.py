@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""A script that lists all states from the database hbtn_0e_0_usa"""
+"""A Display name argument of states table"""
 import MySQLdb
 from sys import argv
 
 
-def get__db():
+def filter__names():
     """Takes arguments argv to list from database
-    Arguments:
+    Only lists with states that start with  N
         argv[1]: mysql username
         argv[2]: mysql password
         argv[3]: database name
@@ -16,14 +16,15 @@ def get__db():
                          user=argv[1],
                          passwd=argv[2],
                          db=argv[3],
-                         charset="utf8"
+                         charset="utf8",
                          )
 
     # Getting a cursor in MySQLdb python
     cur = db.cursor()
 
     # Executing db queries
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE BINARY name='{:s}'\
+                ORDER BY id ASC".format(argv[4]))
 
     # fetches all the rows of a query result
     query_rows = cur.fetchall()
@@ -35,5 +36,6 @@ def get__db():
     cur.close()
     db.close()
 
+
 if __name__ == '__main__':
-    get__db()
+    filter__names()

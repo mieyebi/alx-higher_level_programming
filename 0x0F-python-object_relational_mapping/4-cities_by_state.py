@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""A script that lists all states from the database hbtn_0e_0_usa"""
+"""A script that lists all cities"""
 import MySQLdb
 from sys import argv
 
 
-def get__db():
+def filter__list():
     """Takes arguments argv to list from database
+    Only lists with states that matches name argument
     Arguments:
         argv[1]: mysql username
         argv[2]: mysql password
@@ -16,14 +17,16 @@ def get__db():
                          user=argv[1],
                          passwd=argv[2],
                          db=argv[3],
-                         charset="utf8"
+                         charset="utf8",
                          )
 
     # Getting a cursor in MySQLdb python
     cur = db.cursor()
 
     # Executing db queries
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT cities.id, cities.name, states.name FROM cities\
+                INNER JOIN states ON cities.state_id = states.id\
+                ORDER BY cities.id ASC")
 
     # fetches all the rows of a query result
     query_rows = cur.fetchall()
@@ -35,5 +38,6 @@ def get__db():
     cur.close()
     db.close()
 
+
 if __name__ == '__main__':
-    get__db()
+    filter__list()
