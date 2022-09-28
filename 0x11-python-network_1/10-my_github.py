@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" A script that takes github credentials and uses the Github api to display id"""
+""" A script that takes github credentials,
+    and uses the Github api to display id
+"""
 
 if __name__ == '__main__':
     import requests
